@@ -4350,7 +4350,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   defaultUrl: {
-    value: 'readme.pdf',
+    value: '',
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
