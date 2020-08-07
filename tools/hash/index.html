@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>hash</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script type="text/javascript" src="sjcl-1.0.8/sjcl.js"></script>
+    <script type="text/javascript" src="sjcl-1.0.8/core/sha1.js"></script>
+    <script type="text/javascript" src="sjcl-1.0.8/core/sha512.js"></script>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <select id="type" autocomplete="off">
+                        <option>sha1</option>
+                        <option selected="selected">sha256</option>
+                        <option>sha512</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><textarea id="input" placeholder="input" autocomplete="off"></textarea></td>
+            </tr>
+            <tr>
+                <td><textarea id="output" placeholder="output" autocomplete="off"></textarea></td>
+            </tr>
+            <tr>
+                <td><button id="hash">hash</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        document.querySelector('#hash').addEventListener('click', function () {
+            var typeEle = document.querySelector('#type');
+            var type = typeEle.options[typeEle.selectedIndex].value;
+            var input = document.querySelector('#input').value;
+            var outputEle = document.querySelector('#output');
+            if (type == 'sha1') {
+                outputEle.value = sjcl.codec.hex.fromBits(sjcl.hash.sha1.hash(input));
+            } else if (type == 'sha256') {
+                outputEle.value = sjcl.codec.hex.fromBits(sjcl.hash.sha256.hash(input));
+            } else if (type == 'sha512') {
+                outputEle.value = sjcl.codec.hex.fromBits(sjcl.hash.sha512.hash(input));
+            }
+        });
+    </script>
+</body>
+
+</html>
