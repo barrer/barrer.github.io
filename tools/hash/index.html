@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hash</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="sjcl-1.0.8/sjcl.js"></script>
+    <script type="text/javascript" src="sjcl-1.0.8/core/sha1.js"></script>
+    <script type="text/javascript" src="sjcl-1.0.8/core/sha512.js"></script>
+    <script type="text/javascript" src="crypto-js-4.0.0/crypto-js.js"></script>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <select id="type" autocomplete="off">
+                        <option>md5</option>
+                        <option>sha1</option>
+                        <option selected="selected">sha256</option>
+                        <option>sha512</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><textarea id="input" placeholder="input" autocomplete="off"></textarea></td>
+            </tr>
+            <tr>
+                <td><textarea id="output" placeholder="output" autocomplete="off"></textarea></td>
+            </tr>
+            <tr>
+                <td><button id="hash">hash</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        function hash() {
+            var typeEle = document.querySelector('#type');
+            var type = typeEle.options[typeEle.selectedIndex].value;
+            var input = document.querySelector('#input').value;
+            var outputEle = document.querySelector('#output');
+            if (type == 'md5') {
+                outputEle.value = CryptoJS.MD5(input).toString();
+            } else if (type == 'sha1') {
+                outputEle.value = sjcl.codec.hex.fromBits(sjcl.hash.sha1.hash(input));
+            } else if (type == 'sha256') {
+                outputEle.value = sjcl.codec.hex.fromBits(sjcl.hash.sha256.hash(input));
+            } else if (type == 'sha512') {
+                outputEle.value = sjcl.codec.hex.fromBits(sjcl.hash.sha512.hash(input));
+            }
+        }
+        document.querySelector('#hash').addEventListener('click', hash);
+        document.querySelector('#type').addEventListener('change', hash);
+        document.querySelector('#input').addEventListener('change', hash);
+    </script>
+</body>
+
+</html>

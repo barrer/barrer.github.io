@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>qrcode</title>
+</head>
+
+<body>
+    <center>
+        <span style="font-size:12px;">Type in the text box, and then click outside the text box.</span>
+        <br>
+        <br>
+        <textarea id="text" style="height:100px;width:300px;"></textarea>
+        <br>
+        <div id="qrcode" style="margin-top:15px;width:300px;height:300px;"></div>
+    </center>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+
+    <script type="text/javascript">
+        function makeCode() {
+            jQuery('#qrcode').empty();
+            var elText = document.getElementById("text");
+
+            if (!elText.value) {
+                elText.focus();
+                return;
+            }
+
+            try {
+                var qrcode = new QRCode("qrcode");
+                qrcode.makeCode(elText.value);
+            } catch (error) {
+                alert(error);
+            }
+        }
+
+        makeCode();
+
+        $("#text").on("blur", function () {
+            makeCode();
+        });
+
+        $(function () {
+            var elText = document.getElementById("text");
+            elText.focus();
+        });
+    </script>
+</body>

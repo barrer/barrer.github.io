@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title><![CDATA[barrer]]></title>
+<link><![CDATA[https://barrer.github.io/]]></link>
+<description><![CDATA[https://barrer.github.io/]]></description>
+<language>zh-cn</language>
+<ttl>60</ttl>
+<item>
+<title>
+<![CDATA[博客迁移到 GitHub Pages]]>
+</title>
+<description>
+<![CDATA[
+<div>
+ <a href="https://barrer.github.io/">Home</a> / 
+ <a href="https://barrer.github.io/articles">Articles</a>
+</div>
+<h1 id="博客迁移到-github-pages"><a href="https://barrer.github.io/articles/migrate-to-github-pages.html">博客迁移到 GitHub Pages</a></h1> 
+<p>2021-03-26</p> 
+<div> 
+ <h1>目录</h1> 
+ <ul> 
+  <li><a href="#原博客信息">原博客信息</a></li> 
+  <li><a href="#新地址">新地址</a></li> 
+ </ul> 
+</div> 
+<h2 id="原博客信息">原博客信息</h2> 
+<pre><code class="language-text">whycnblogs
+园号：487757
+园龄：8年2个月
+入园：2013-01-09
+博客：https://www.cnblogs.com/whycnblogs/
+</code></pre> 
+<h2 id="新地址">新地址</h2> 
+<p><a href="https://barrer.github.io/">https://barrer.github.io/</a></p>
+]]>
+</description>
+<pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate>
+<link><![CDATA[https://barrer.github.io/articles/migrate-to-github-pages.html]]></link>
+<guid><![CDATA[https://barrer.github.io/articles/migrate-to-github-pages.html]]></guid>
+</item>
+</channel>
+</rss>
