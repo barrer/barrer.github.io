@@ -1,10 +1,10 @@
-# About the contributor of example
+# About the example contributor
 
 2021-07-29
 
 [TOC]
 
-The contributor of `example <example@example.com>` is me. In future commits, I will modify the commit email according to the following tutorial.
+The example contributor(`example <example@example.com>`) is me. In future commits, I will modify the commit email according to the following tutorial.
 
 [Why are my contributions not showing up on my profile?](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-contribution-graphs-on-your-profile/why-are-my-contributions-not-showing-up-on-my-profile#your-local-git-commit-email-isnt-connected-to-your-account)
 
