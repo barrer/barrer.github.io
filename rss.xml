@@ -8,6 +8,40 @@
 <ttl>60</ttl>
 <item>
 <title>
+<![CDATA[鼠标手势 MouseGestureL.ahk 8 方向模式配置]]>
+</title>
+<description>
+<![CDATA[
+<div>
+ <a href="https://barrer.github.io/">Home</a>
+</div>
+<h1 id="鼠标手势-mousegesturelahk-8-方向模式配置"><a href="https://barrer.github.io/articles/mouse-gesture.html">鼠标手势 MouseGestureL.ahk 8 方向模式配置</a></h1> 
+<p>2025-11-06</p> 
+<div> 
+ <h1>目录</h1> 
+ <ul> 
+  <li><a href="#官网">官网</a></li> 
+  <li><a href="#与本机已安装-autohotkey-v20-兼容方式">与本机已安装 AutoHotkey v2.0 兼容方式</a></li> 
+  <li><a href="#配置">配置</a></li> 
+ </ul> 
+</div> 
+<h2 id="官网">官网</h2> 
+<p><a href="https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=31859">https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=31859</a></p> 
+<h2 id="与本机已安装-autohotkey-v20-兼容方式">与本机已安装 AutoHotkey v2.0 兼容方式</h2> 
+<p>新建快捷方式，目标为：</p> 
+<pre><code class="language-text">C:\Users\用户名\Documents\MouseGestureL\AutoHotkey\AutoHotkeyU64.exe "C:\Users\用户名\Documents\MouseGestureL\MouseGestureL.ahk"
+</code></pre> 
+<h2 id="配置">配置</h2> 
+<p><img src="https://barrer.github.io/articles/mouse-gesture.assets/手势.png" alt="手势.png"> <img src="https://barrer.github.io/articles/mouse-gesture.assets/识别.png" alt="识别.png"> <img src="https://barrer.github.io/articles/mouse-gesture.assets/提示.png" alt="提示.png"> <img src="https://barrer.github.io/articles/mouse-gesture.assets/轨迹与日志.png" alt="轨迹与日志.png"></p> 
+<p>EOF</p>
+]]>
+</description>
+<pubDate>周四, 06 11月 2025 00:00:00 GMT</pubDate>
+<link><![CDATA[https://barrer.github.io/articles/mouse-gesture.html]]></link>
+<guid><![CDATA[https://barrer.github.io/articles/mouse-gesture.html]]></guid>
+</item>
+<item>
+<title>
 <![CDATA[About the example contributor]]>
 </title>
 <description>
@@ -23,7 +57,7 @@
 </code></pre>
 ]]>
 </description>
-<pubDate>Thu, 29 Jul 2021 00:00:00 GMT</pubDate>
+<pubDate>周四, 29 7月 2021 00:00:00 GMT</pubDate>
 <link><![CDATA[https://barrer.github.io/articles/about-the-example-contributor.html]]></link>
 <guid><![CDATA[https://barrer.github.io/articles/about-the-example-contributor.html]]></guid>
 </item>
@@ -56,7 +90,7 @@
 <p><a href="https://barrer.github.io/">https://barrer.github.io/</a></p>
 ]]>
 </description>
-<pubDate>Fri, 26 Mar 2021 00:00:00 GMT</pubDate>
+<pubDate>周五, 26 3月 2021 00:00:00 GMT</pubDate>
 <link><![CDATA[https://barrer.github.io/articles/migrate-to-github-pages.html]]></link>
 <guid><![CDATA[https://barrer.github.io/articles/migrate-to-github-pages.html]]></guid>
 </item>
