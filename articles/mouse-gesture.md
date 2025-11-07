@@ -23,4 +23,39 @@ C:\Users\用户名\Documents\MouseGestureL\AutoHotkey\AutoHotkeyU64.exe "C:\User
 ![提示.png](mouse-gesture.assets/提示.png)
 ![轨迹与日志.png](mouse-gesture.assets/轨迹与日志.png)
 
+### MouseGestureL\Config\MouseGestureL.ini 部分手势配置参考
+
+```ini
+[按住右键←]
+G=RB_4_
+浏览器=;按 Alt+Right<MG_CR>Send, !{Right}
+
+[按住右键→]
+G=RB_6_
+浏览器=;按 Alt+Left<MG_CR>Send, !{Left}
+
+[按住右键↑←]
+G=RB_84_
+G=RB_87_
+G=RB_874_
+G=RB_74_
+G=RB_7_
+浏览器=;按 Shift+Ctrl+Tab<MG_CR>Send, +^{Tab}
+
+[按住右键↑→]
+G=RB_86_
+G=RB_89_
+G=RB_896_
+G=RB_96_
+G=RB_9_
+浏览器=;按 Ctrl+Tab<MG_CR>Send, ^{Tab}
+
+[按住右键↓→]
+G=RB_26_
+G=RB_23_
+G=RB_236_
+G=RB_36_
+浏览器=;按 Ctrl+W<MG_CR>Send, ^w
+```
+
 EOF

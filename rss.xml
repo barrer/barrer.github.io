@@ -22,7 +22,10 @@
  <ul> 
   <li><a href="#官网">官网</a></li> 
   <li><a href="#与本机已安装-autohotkey-v20-兼容方式">与本机已安装 AutoHotkey v2.0 兼容方式</a></li> 
-  <li><a href="#配置">配置</a></li> 
+  <li><a href="#配置">配置</a> 
+   <ul> 
+    <li><a href="#mousegesturelconfigmousegesturelini-部分手势配置参考">MouseGestureL\Config\MouseGestureL.ini 部分手势配置参考</a></li> 
+   </ul> </li> 
  </ul> 
 </div> 
 <h2 id="官网">官网</h2> 
@@ -33,6 +36,38 @@
 </code></pre> 
 <h2 id="配置">配置</h2> 
 <p><img src="https://barrer.github.io/articles/mouse-gesture.assets/手势.png" alt="手势.png"> <img src="https://barrer.github.io/articles/mouse-gesture.assets/识别.png" alt="识别.png"> <img src="https://barrer.github.io/articles/mouse-gesture.assets/提示.png" alt="提示.png"> <img src="https://barrer.github.io/articles/mouse-gesture.assets/轨迹与日志.png" alt="轨迹与日志.png"></p> 
+<h3 id="mousegesturelconfigmousegesturelini-部分手势配置参考">MouseGestureL\Config\MouseGestureL.ini 部分手势配置参考</h3> 
+<pre><code class="language-ini">[按住右键←]
+G=RB_4_
+浏览器=;按 Alt+Right&lt;MG_CR&gt;Send, !{Right}
+
+[按住右键→]
+G=RB_6_
+浏览器=;按 Alt+Left&lt;MG_CR&gt;Send, !{Left}
+
+[按住右键↑←]
+G=RB_84_
+G=RB_87_
+G=RB_874_
+G=RB_74_
+G=RB_7_
+浏览器=;按 Shift+Ctrl+Tab&lt;MG_CR&gt;Send, +^{Tab}
+
+[按住右键↑→]
+G=RB_86_
+G=RB_89_
+G=RB_896_
+G=RB_96_
+G=RB_9_
+浏览器=;按 Ctrl+Tab&lt;MG_CR&gt;Send, ^{Tab}
+
+[按住右键↓→]
+G=RB_26_
+G=RB_23_
+G=RB_236_
+G=RB_36_
+浏览器=;按 Ctrl+W&lt;MG_CR&gt;Send, ^w
+</code></pre> 
 <p>EOF</p>
 ]]>
 </description>
