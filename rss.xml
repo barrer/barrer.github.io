@@ -66,10 +66,15 @@ G=RB_9_
 浏览器=;按 Ctrl+Tab&lt;MG_CR&gt;Send, ^{Tab}
 
 [按住右键↓→]
+G=RB_236_
 G=RB_26_
 G=RB_23_
-G=RB_236_
 G=RB_36_
+G=RB_16_
+G=RB_13_
+G=RB_1236_
+G=RB_123_
+G=RB_136_
 浏览器=;按 Ctrl+W&lt;MG_CR&gt;Send, ^w
 </code></pre> 
 <p>EOF</p>
