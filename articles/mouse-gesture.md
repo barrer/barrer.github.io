@@ -16,11 +16,11 @@
 C:\Users\用户名\Documents\MouseGestureL\AutoHotkey\AutoHotkeyU64.exe "C:\Users\用户名\Documents\MouseGestureL\MouseGestureL.ahk"
 ```
 
+右击快捷方式，以管理员身份运行
+
 ## 开机自启动
 
-快捷方式放到如下路径（或 `Win+R` - 运行 - `shell:startup` - 自动打开此目录）：
-
-`C:\Users\用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+软件启动后，右击托盘图标，设置 - 其它 - 设为自启动
 
 ## 配置
 
